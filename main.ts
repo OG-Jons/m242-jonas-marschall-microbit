@@ -1,5 +1,5 @@
 basic.forever(function () {
-    const temperature: number = input.temperature();
-    basic.showNumber(temperature);
-    basic.pause(1000);
+  const lightLevel: number = input.lightLevel();
+    led.plotBarGraph(lightLevel, 255)
+    basic.pause(100);
 })
